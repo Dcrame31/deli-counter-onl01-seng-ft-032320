@@ -27,7 +27,7 @@ def now_serving(array)
     #=> "Currently serving Ada."
     first = array[0]
     puts "Currently serving #{first}."
-    array.pop
+    array.shift
   end
 end
 
