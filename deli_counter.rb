@@ -18,7 +18,17 @@ def take_a_number(array, name)
 end
 
 
-def now_serving
+def now_serving(array)
   #should call next person in line then remove them from the options_from_collection_for_select
   #if nobody in line puts "There is nobody waiting to be served!"
+  if array.length == 0
+    puts "There is nobody waiting to be served!"
+  else
+    #=> "Currently serving Ada."
+    first = array.splice(0,1)
+    puts "Currently serving #{first}."
+  end
 end
+
+
+now_serving(katz_deli)
