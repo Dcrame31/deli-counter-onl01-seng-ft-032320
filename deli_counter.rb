@@ -25,8 +25,9 @@ def now_serving(array)
     puts "There is nobody waiting to be served!"
   else
     #=> "Currently serving Ada."
-    first = array.splice(0,1)
+    first = array[0]
     puts "Currently serving #{first}."
+    array.pop
   end
 end
 
